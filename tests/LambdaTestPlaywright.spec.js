@@ -3,7 +3,7 @@ const { navigateToSeleniumPlayground } = require('../tests/utils/Navigation');
 const { connectToBrowser } = require('../utilsWebSocket/setup');
 const { teardown } = require('../utilsWebSocket/tearDown');
 
-test.only('Verify simple form demo', async ({ browserName }) => {
+test('Verify simple form demo', async ({ browserName }) => {
 
   const capabilities = require('../configue/capabilities');
   const capability = capabilities.find(cap => cap.browserName.toLowerCase() === browserName.toLowerCase());
